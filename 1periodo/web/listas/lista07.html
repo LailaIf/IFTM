@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 07</title>
+</head>
+<body>
+    <h1 align="center">Formulário</h1>
+    <form action="/enviar-dados" method="POST">
+
+        <fieldset style="background-color: azure;">
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" required>
+        <br>
+
+        <input type="radio" name="sexo" value="masculino">
+        <label for="masc">Masculino</label>
+        <input type="radio" name="sexo" value="masculino">
+        <label for="masc">Feminino</label><br>
+        <br>
+
+            <label>Estado civil:</label>
+            <select>
+            <option value="" disabled selected>Selecione</option>
+            <option>Casado</option>
+            <option>Solteiro</option>
+            <option>Viuvo</option>
+            <option>Divorciado</option>
+            <option>Outro</option>
+            </select>
+        
+            <br>
+            <br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="seu@email.com" required>
+        <br>
+        <br>
+
+        <label for="nome">Endereço:</label>
+        <input type="text" placeholder="Digite seu nome" required>
+        <br>
+        <br>
+
+        <label for="quantidade">Número:</label>
+        <input type="number"  min="1">
+        <br>
+        <br>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" max="2026-12-31">
+        <br>
+        <br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel">
+        <br>
+        <br>
+
+        <label for="site">página pessoal</label>
+        <input type="url" placeholder="https://www.site.com">
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+      
+</body>
+</html>
