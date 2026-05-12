@@ -1,21 +1,78 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+
+}
+body{
+    background-color: black;
+}
+ul{
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    color: black;
+
+}
+li{
+    padding: 15px;
+    list-style: none;
 }
 
-.box{
+header nav{
+    direction: row ;
+}
+
+a:link{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    color: white;
     text-align: center;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 60px;
-    background-image: url('https://artecipo.com.br/img/whatsapp.png');
-    background-position: center center;
+    padding: 30px;
+}
+h1,h2{
+    color: black
+}
+.imagem{
+    width: 100%;
+    background-color: black;
+    height: 250px;
+    background-image: url('https://preview.redd.it/what-are-yalls-thoughts-on-iron-maiden-v0-jebv03cs5ooe1.jpeg?width=640&crop=smart&auto=webp&s=c84bfcbb38f09d0a82f18d9b1fa0bece83fe02c6');
+    background-repeat: no-repeat;
+    background-position: center -100px ;
+    background-size: 60% ;
+}
+main{
+    margin: 30px 20% ;
+    margin-bottom: 0px;
+
+
+}
+main section {
+    background-color: white; 
+    padding: 30px;
+    text-align: justify;
+}
+
+main section:nth-child(even) {
+    background-color: lightgray;
+
+}
+.box{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Iron_Maiden_logo_black.svg/3840px-Iron_Maiden_logo_black.svg.png');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
     bottom: 0px;
-    right: 0px;
-    cursor: pointer;
+    right: 25px;
+    width: 200px;
+    height: 90px;
 }
