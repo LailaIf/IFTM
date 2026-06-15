@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul{
+    display: flex;
+    background-color: orangered;
+    justify-content: right;
+}
+ul li{
+    right: 0px;
+    list-style: none;
+}
+
+ul li:hover{
+   background-color: white;
+   color: orangered;
+}
+
+a:link, a:visited{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: white;
+    color: orangered;
+}
+.imagem >div{
+    background-color: white;
+    width: 950px;
+    height: 350px;
+    border: 3px solid orangered;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.imagem>div>div{
+    width: 700px;
+    height: 250px;
+    margin: auto;
+    align-items: center;
+    background-image: url('logos2.png');
+    background-repeat: no-repeat;
+    background-size: content;
+}
+.imagem{
+    background-color: darkblue;
+    padding: 10px;
+}
+.imagem p {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.portifolio>div{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.portifolio>div>div{
+    text-align: center;
+    padding: 5px;
+
+}
+
+.portifolio p{
+    font-size: 15px;
+    text-align: justify;
+}
+.portifolio summary{
+    text-align: justify;
+    color: rgb(253, 124, 73);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.portifolio details p {
+    margin-bottom: 50px;
+}
+.portifolio{
+    width: 1050px;
+    margin: auto;
+    padding: 20px;
+
+}
+footer{
+    background-color: rgb(151, 74, 38);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+
+    header ul{
+        justify-content: center;
+    }
+
+    .imagem >div{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border: 3px solid orangered;
+    border-radius: 25px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    }
+
+    .imagem>div>div{
+    width: 300px;
+    height: 330px;
+    margin: auto;
+    background-image: url('logoManutencao.png');
+    background-repeat: no-repeat;
+    background-size: content;
+}
+
+    .portifolio>div{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.portifolio{
+    width: 400px;
+    padding: 20px;
+
+}
+
+.portifolio h2{
+    text-align: center;
+}
+}
