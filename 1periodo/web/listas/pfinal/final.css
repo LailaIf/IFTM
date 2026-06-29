@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: black;
+    justify-content: right;
+    
+
+}
+
+ul li{
+    padding: 10px;
+    width: 10%;
+    
+}
+
+a:link, a:visited{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fee7f9;
+}
+
+.imagem img{
+    width: 100%;
+    height: 350px;
+}
+
+section:nth-of-type(odd){
+    background-color: #fee7f9 ;
+}
+section:nth-of-type(even){
+    background-color: white;
+}
+
+
+section{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 1200px;
+    margin: auto;
+    
+}
+
+.compromisso2 >div>div{
+    flex-direction: row;
+    
+
+}
+
+
+.quemsomos .container, .fotos .container, .compromisso2 .container{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.compromissos img{
+    width: 40px;
+}
+
+.fotos p,.quemsomos p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.fotos img,.compromisso2 img{
+    width: 300px;
+}
+
+
+.quemsomos>div>div{
+    text-align: center;
+    width: 340px;
+    margin: auto;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    padding: 40px;
+}
+
+input{
+    background-color: black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 130px;
+    border: 1px solid black;
+}
+
+input:hover{
+    background-color: rgba(255, 192, 203, 0.411);
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:500px) {
+
+
+    ul li{
+        padding: 20px;
+        width: 15%;
+        font-size: 13px;
+        
+    }
+
+    section{
+        width: 450px;
+    }
+
+    .fotos>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos img{
+        width: 300px;
+    }
+
+    .quemsomos>div{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .quemsomos>div>div{
+        width: 300px;
+    }
+
+    .compromisso2>div{
+        display: flex;
+        flex-direction: column;
+          width: 350px;
+    }
+
+    .compromisso2>div>div{
+        width: 350px;
+    }
+
+    .compromisso2 img{
+        width: 350px;
+    }
+
+    .compromisso2 div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    margin-left: 9%; 
+    width: 300px; 
+    gap: 1px;
+}
+}
