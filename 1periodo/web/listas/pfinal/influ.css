@@ -90,12 +90,12 @@ input:hover{
 section {
     width: 1200px;
     margin: auto;
-    background-color: white;
+    background-color: #fee7f9;
     
 }
 
 body{
-    background-color: #fee7f9;
+    background-color: white;
     margin-bottom: 80px;
 }
 
