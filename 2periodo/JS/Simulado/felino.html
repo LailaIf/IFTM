@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado</title>
+    <script src="felino.js" defer></script>
+    <style>
+        img{
+            width: 100px;
+            padding: 0px 15px;
+        }
+        .gatos{
+            width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        .gatos>div{
+            text-align: center;
+        }
+        #gerar{
+            background-color: rgb(168, 22, 22);
+            color: white;
+            border-radius: 10px;
+            padding: 3px;
+            width: 180px;
+        }
+
+        #numgerado{
+            width: 160px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gatos">
+    <div>
+       <img src="./Imagens/gato01.gif" alt="" id="gato1">
+       <p>clique em mim!</p>
+    </div>
+    <div>
+       <img src="./Imagens/gato02.gif" id="gato2">
+       <p>clique sobre mim várias vezes! <br> Carinhos: <span id="cont">0</span> </p>
+    </div>
+    <div>
+        <img src="./Imagens/gato03.gif" id="gato3">
+       <p>Passe o cursor do mouse sobre mim!</p>
+    </div>
+    <div>
+        <img src="./Imagens/gato04.gif" id="gato4">
+       <p id="co">lá lá lá lá lá lá</p>
+    </div>
+    <div>
+        <img src="./Imagens/gato05.gif" id="">
+       <input type="button" value="Gerar numero da sorte" id="gerar">
+       <input type="text" name="" id="numgerado" value="">
+    </div>
+    </div>
+</body>
+</html>
