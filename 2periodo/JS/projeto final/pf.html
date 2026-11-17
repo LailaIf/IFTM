@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Room</title>
+    <link rel="stylesheet" href="pf.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>FIND ROOM</h1>
+        <p>Encontre os objetos antes que o tempo acabe!</p>
+    </header>
+
+    <main>
+
+        <section class="painel">
+            <div class="informacao">
+                <h3>Tempo</h3>
+                <span id="tempo">00:45</span>
+            </div>
+        </section>
+
+        <section class="jogo">
+
+            <div class="quarto" id="quarto">
+
+                <img src="img/quarto1.png" alt="">
+
+                <div class="personagem">
+                    <img src="img/boneco.png" alt="">
+                </div>
+
+                <div class="objeto">🔑</div>
+                <div class="objeto">📕</div>
+                <div class="objeto">🧸</div>
+                <div class="objeto">🎧</div>
+                <div class="objeto">🕶️</div>
+
+                <canvas id="iluminacao"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="lista">
+            <h3>Encontre os objetos:</h3>
+            <div id="listaObjetos">
+                <span>🔑 Chave</span>
+                <span>📕 Livro</span>
+                <span>🧸 Urso</span>
+                <span>🎧 Fone</span>
+                <span>🕶️ Óculos</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="pf.js"></script>
+</body>
+</html>

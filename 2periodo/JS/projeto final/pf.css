@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background: rgb(41, 41, 41);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-family: Creepster;
+}
+
+header p {
+    margin-top: 8px;
+    color: #bdbdcc;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.painel {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+}
+
+
+.informacao span {
+    display: block;
+    color: #f6d365;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.jogo {
+    display: flex;
+    justify-content: center;
+}
+
+.quarto {
+    width: 550px;
+    height: 445px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-image:
+        linear-gradient(#ffffff12 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff12 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.moveis {
+    position: absolute;
+    border: 4px solid #59402e;
+    border-radius: 8px;
+}
+
+.cama {
+    width: 190px;
+    height: 130px;
+    background: #6486a8;
+    top: 30px;
+    left: 30px;
+}
+
+.mesa {
+    width: 130px;
+    height: 90px;
+    background: #805638;
+    top: 35px;
+    right: 35px;
+}
+
+.armario {
+    width: 100px;
+    height: 190px;
+    background: #986b46;
+    bottom: 25px;
+    right: 30px;
+}
+
+.tapete {
+    width: 230px;
+    height: 120px;
+    background: #a85d65;
+    bottom: 25px;
+    left: 35px;
+    border-radius: 15px;
+}
+
+.personagem {
+    position: absolute;
+    top: 190px;
+    left: 380px;
+    font-size: 35px;
+    z-index: 4;
+    pointer-events: none;
+}
+
+#iluminacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.objeto {
+    position: absolute;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.objeto:nth-of-type(6) {
+    top: 90px;
+    left: 270px;
+}
+
+.objeto:nth-of-type(7) {
+    top: 210px;
+    left: 600px;
+}
+
+.objeto:nth-of-type(8) {
+    bottom: 50px;
+    left: 350px;
+}
+
+.objeto:nth-of-type(9) {
+    top: 160px;
+    right: 180px;
+}
+
+.objeto:nth-of-type(10) {
+    bottom: 60px;
+    right: 250px;
+}
+
+.escuridao {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle 100px at 50% 50%,
+        transparent 0%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: 3;
+    pointer-events: none;
+}
+
+.lista {
+    margin: 25px 0;
+}
+
+#listaObjetos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#listaObjetos span {
+    background: #292b40;
+    padding: 12px;
+    border-radius: 8px;
+}
